@@ -1,32 +1,32 @@
+
+
+This is the context /* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+  height: 100%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
 html,
 body {
   height: 100%;
-  font-family: Arial, sans-serif;
-  line-height: 1;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Default background */
-  color: #333; /* Default text color */
 }
 
-/* Header and Footer */
+
 header {
   text-align: center;
   margin-bottom: 20px;
-  background-color: #008000;
-  color: white;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
 
-/* Navigation */
 nav {
-  background-color: #333;
+  background-color: #333; 
   text-align: center;
 }
 
@@ -43,30 +43,32 @@ nav ul li {
 
 nav ul li a {
   color: white;
-  text-decoration: none;
-  padding: 10px;
+  text-decoration: none; 
+  padding: 10px; 
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+body {
+  font-family:Arial, sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-/* Main Container */
 .container {
-  width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 1000px; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
 
-/* About Me Section */
 #about-me {
-  display: flex;
+  display: flex; 
   align-items: center;
-  max-width: 800px;
+  max-width: 800px; 
   margin: 20px auto;
   padding: 20px;
-  background: #fff;
-  border-radius: 8px;
+  background: #fff; 
+  border-radius: 8px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -74,11 +76,11 @@ nav ul li a:hover {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #4CAF50;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 5px solid #4CAF50; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
   object-fit: cover;
   margin-right: 20px;
-}
+        }
 
 .about-text {
   flex: 1;
@@ -86,24 +88,154 @@ nav ul li a:hover {
 
 .about-text h2 {
   margin-top: 0;
-  border-bottom: 2px solid #333;
-  padding-bottom: 5px;
 }
 
 .about-text p {
   margin: 10px 0;
 }
 
-/* Section Styles */
+
+header {
+  background-color: #008000;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #333; 
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px; 
+}
+
+nav ul li a:hover {
+  text-decoration: underline; 
+}
+
+footer {
+  background-color:#333 ; 
+  color: white; 
+  text-align: center;
+  padding: 20px; 
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  nav ul {
+    flex-direction: column; 
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color:#f4e6f0;
+}
+ 
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+   
+
+nav {
+  background-color: #333; 
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px; 
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
 section {
   margin-bottom: 20px;
   background: white;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+footer {
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Slider */
+body {
+  margin: 0; 
+  padding: 0; 
+  background-color: #add8e6; 
+  color: #333; 
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+nav {
+  background-color: #333; 
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px; 
+}
 .slider {
   position: relative;
   max-width: 70%;
@@ -125,8 +257,7 @@ section {
   height: auto;
 }
 
-.prev,
-.next {
+.prev, .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -144,33 +275,23 @@ section {
   right: 10px;
 }
 
-/* Media Queries */
-@media (max-width: 600px) {
-  .container {
-    width: 95%;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-}
-
+/* For tablets and larger devices */
 @media (min-width: 600px) {
   .header-container {
     padding: 30px;
-  }
+   }
 
   nav ul li {
     margin: 0 20px;
   }
 
+  #portfolio {
+     padding: 40px;
+  }
+
   .slider {
     max-width: 90%;
-    margin: 0 auto;
+      margin: 0 auto;
   }
 
   .slide {
@@ -178,6 +299,7 @@ section {
   }
 }
 
+/* For desktops and larger devices */
 @media (min-width: 900px) {
   .header-container {
     padding: 40px;
@@ -185,7 +307,7 @@ section {
 
   nav ul li {
     margin: 0 25px;
-    font-size: 1.2em;
+      font-size: 1.2em;
   }
 
   .slider {
@@ -203,27 +325,27 @@ section {
   }
 }
 
-/* Main Content */
 main {
-  max-width: 1200px;
-  margin: 20px auto;
+  max-width: 1200px; 
+  margin: 20px auto; 
   padding: 20px;
-  background-color: #e0f7fa;
+  background-color: #e0f7fa; 
   color: #004d40;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Slider Active State */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333; 
+  color: white; 
+}
+
 .slide {
   display: none; /* Initially hide all slides */
 }
 
 .slide.active {
   display: block; /* Show the active slide */
-}
-
-/* Map Styling */
-#map {
-  height: 100%;
 }
